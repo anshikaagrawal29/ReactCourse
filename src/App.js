@@ -1,5 +1,5 @@
 import Navbar from "./component/Navbar";
-/*Added new Component and Learned PropTypes and Prop*/
+/*Added new Component and Learned PropTypes and Prop...*/
 function App() {
   return (
     <>
