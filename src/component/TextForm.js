@@ -20,6 +20,14 @@ export default function TextForm() {
     setText(lowerText)
  }
 
+ function getLength()
+ {
+    if(text.length === 0)
+    return "0";
+    else
+    return text.split(" ").length;
+ }
+
   return (
    <>
     <div className="container">
@@ -33,7 +41,7 @@ export default function TextForm() {
      <div className="container">
         <hr></hr>
         <h3> Your Summary:</h3>
-        <p>Text words Count : {text.split(" ").length} and Text Length is: {text.length}</p>
+        <p>Text words Count : {getLength()} and Text Length is: {text.length}</p>
         <h3>Preview: </h3>
         <p>{text}</p>
      </div>
