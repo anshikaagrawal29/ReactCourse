@@ -20,7 +20,7 @@ export default function TextForm() {
     setText(lowerText)
  }
 
- function getLength()
+ const  getLength = () =>
  {
     if(text.length === 0)
     return "0";
