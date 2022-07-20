@@ -1,3 +1,4 @@
+import About from "./component/About";
 import Navbar from "./component/Navbar";
 import TextForm from "./component/TextForm";
 
@@ -6,10 +7,10 @@ function App() {
   return (
     <>
     <Navbar title="Convert Text" aboutText = "About"/>
+    
     <div className="container">
     <TextForm/>
       </div>
-    
     </>
   );
 }
