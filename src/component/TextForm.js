@@ -1,14 +1,13 @@
 import React, {useState} from 'react'
-import PropTypes from 'prop-types'
 
 export default function TextForm(props) {
  const[text, setText] = useState("")
- const[btnText, setBtnText] = useState("Enable Dark Mode")
- 
+
  const setUpValueOfMyText = () =>
  {
     let newtext = text.toUpperCase();
-    setText(newtext)
+    setText(newtext);
+    props.showAlert("Converted to UpperCase!!", "success");
  }
 
  const onchangeOfMyText = (event) =>
@@ -19,15 +18,21 @@ export default function TextForm(props) {
  const setLoValueOfMyText = () =>
  {
     let lowerText = text.toLowerCase();
-    setText(lowerText)
+    setText(lowerText);
+    props.showAlert("Converted to LowerCase!!", "success");
  }
 
  const  getLength = () =>
  {
     if(text.length === 0)
-    return "0";
+    {
+      return "0";
+    }
     else
-    return text.split(" ").length;
+    {
+      return text.split(" ").length;
+    }
+    
  }
 
  const clearMyText = () =>
