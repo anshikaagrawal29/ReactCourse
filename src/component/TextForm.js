@@ -34,7 +34,6 @@ export default function TextForm(props) {
  {
     setText("");
  }
-
   return (
    <>
     <div className="container" style={{backgroundColor : props.mode === 'light'?'white':'#adb5bd', color: props.mode === 'light'?'black':'white'}}>
