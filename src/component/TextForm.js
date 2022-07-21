@@ -41,16 +41,16 @@ export default function TextForm(props) {
  }
   return (
    <>
-    <div className="container" style={{backgroundColor : props.mode === 'light'?'white':'#adb5bd', color: props.mode === 'light'?'black':'white'}}>
+    <div className="container" style={{backgroundColor : props.mode === 'light'?'white':'#e7e9eb', color: props.mode === 'light'?'black':'black'}}>
     <h3 className="my-2 col-6 mx-10" > Enter Your Text Here:</h3>
          <div className="mb-3">
-            <textarea className="form-control" style={{backgroundColor : props.mode === 'light'?'white':'#adb5bd', color: props.mode === 'light'?'black':'white'}} value={text} onChange={onchangeOfMyText} id="myText" rows="8"></textarea>
-            <button type="button" onClick={setUpValueOfMyText} className="btn btn-primary btn-sm mx-2 my-2" >Convert to Upper Case</button>
-            <button type="button" onClick={setLoValueOfMyText} className="btn btn-primary btn-sm mx-2 my-2">Convert to Lower  Case</button>
-            <button type="button" onClick={clearMyText} className="btn btn-primary btn-sm mx-2 my-2">Clear Text</button>
+            <textarea className="form-control" style={{backgroundColor : props.mode === 'light'?'white':'#e7e9eb', color: props.mode === 'light'?'black':'black'}} value={text} onChange={onchangeOfMyText} id="myText" rows="8"></textarea>
+            <button type="button" onClick={setUpValueOfMyText} className={`btn btn-${props.btnColor} btn-sm mx-2 my-2`} >Convert to Upper Case</button>
+            <button type="button" onClick={setLoValueOfMyText} className={`btn btn-${props.btnColor} btn-sm mx-2 my-2`}>Convert to Lower  Case</button>
+            <button type="button" onClick={clearMyText} className={`btn btn-${props.btnColor} btn-sm mx-2 my-2`}>Clear Text</button>
         </div>
     </div>
-     <div className="container" style={{backgroundColor : props.mode === 'light'?'white':'#adb5bd', color: props.mode === 'light'?'black':'white'}}>
+     <div className="container" style={{backgroundColor : props.mode === 'light'?'white':'#e7e9eb', color: props.mode === 'light'?'black':'black'}}>
         <hr></hr>
         <h3> Your Summary:</h3>
         <p>Text words Count : {getLength()} and Text Length is: {text.length}</p>

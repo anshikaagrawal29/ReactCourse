@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
+
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
   <div className="container-fluid">
@@ -18,6 +19,15 @@ export default function Navbar(props) {
           <a className="nav-link active" href="/">{props.aboutText}</a>
         </li>
       </ul>
+      <div>
+      <button type="button" onClick={props.OnGreenBtnClickSetColor} className="btn btn-success btn-lg mx-3 my-2"></button>
+    </div>
+    <div>
+    <button type="button" onClick={props.OnWarningBtnClickSetColor} className="btn btn-warning btn-lg mx-2 my-2"></button>
+    </div>
+      <div>
+      <button type="button" onClick={props.OnPrimaryBtnClickSetColor} className="btn btn-primary btn-lg mx-3 my-2" ></button>
+    </div>
       <div className={`form-check form-switch text-${props.mode === 'light'?'dark':'light'}`}>
       <input className="form-check-input" type="checkbox" onClick={props.toggleModeClick} role="switch" id="toggleMode"/>
       <label className="form-check-label" htmlFor="toggleMode">Enable Dark Mode</label>
