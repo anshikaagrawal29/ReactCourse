@@ -3,6 +3,7 @@ import Navbar from "./component/Navbar";
 import TextForm from "./component/TextForm";
 import React, {useState} from 'react';
 import Alert from "./component/Alert";
+import Footer from "./component/Footer";
 
 /*Added new Component and Learned PropTypes and Prop...*/
 function App() {
@@ -92,6 +93,7 @@ function App() {
     <div className="container" mode={mode}>
       <Alert alertMessage={alertMessage}/>
     <TextForm btnColor={btnColor} showAlert ={showAlert} mode={mode}/>
+    <Footer/>
       </div>
     </>
   );
