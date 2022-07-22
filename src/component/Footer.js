@@ -16,7 +16,7 @@ export default function Footer() {
                   className="img-fluid"
                   alt=""
                 />
-                <a href="">
+                <a href="/">
                   <div className="mask rgba-white-light"></div>
                 </a>
               </div>
@@ -28,7 +28,7 @@ export default function Footer() {
                   className="img-fluid"
                   alt=""
                 />
-                <a href="">
+                <a href="/">
                   <div className="mask rgba-white-light"></div>
                 </a>
               </div>
@@ -40,7 +40,7 @@ export default function Footer() {
                   className="img-fluid"
                   alt=""
                 />
-                <a href="">
+                <a href="/">
                   <div className="mask rgba-white-light"></div>
                 </a>
               </div>
@@ -53,7 +53,7 @@ export default function Footer() {
                   className="img-fluid"
                   alt=""
                 />
-                <a href="">
+                <a href="/">
                   <div className="mask rgba-white-light"></div>
                 </a>
               </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                   className="img-fluid"
                   alt=""
                 />
-                <a href="">
+                <a href="/">
                   <div className="mask rgba-white-light"></div>
                 </a>
               </div>
