@@ -53,7 +53,7 @@ export default function TextForm(props) {
      <div className="container" style={{backgroundColor : props.mode === 'light'?'white':'#e7e9eb', color: props.mode === 'light'?'black':'black'}}>
         <hr></hr>
         <h3> Your Summary:</h3>
-        <p>Text words Count : {getLength()} and Text Length is: {text.length}</p>
+        <p>Text words Count : {getLength()} and Text Characters Count is: {text.length}</p>
         <h3>Preview: </h3>
         <p>{text}</p>
      </div>
